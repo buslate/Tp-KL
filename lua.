@@ -37,6 +37,58 @@ Tab:Button{
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4161.08447265625, 108.5559310913086, -2978.4208984375)
 end
 }
+local Tab = GUI:Tab{
+	Name = "MoreFunction",
+	Icon = "rbxassetid://13192363768"
+}
+Tab:Button{
+	Name = "Redeem All Code",
+	Description = nil,
+	Callback = function() 
+local args = {
+    [1] = "THXFOR1BVISIT"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Functions.redeemcode:InvokeServer(unpack(args))
+
+local args = {
+    [1] = "UPDATE4.5.3"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Functions.redeemcode:InvokeServer(unpack(args))
+
+local args = {
+    [1] = "2023"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Functions.redeemcode:InvokeServer(unpack(args))
+
+local args = {
+    [1] = "1MFAV"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Functions.redeemcode:InvokeServer(unpack(args))
+
+local args = {
+    [1] = "delayedchristmas2022"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Functions.redeemcode:InvokeServer(unpack(args))
+
+local args = {
+    [1] = "Peodiz"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Functions.redeemcode:InvokeServer(unpack(args))
+
+local args = {
+    [1] = "DinoxLive"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Functions.redeemcode:InvokeServer(unpack(args))
+
+end
+}
 GUI:Notification{
 	Title = "Alert",
 	Text = "LoveNual",
